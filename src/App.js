@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css';
 import LanguagesContainer from './containers/LanguagesContainer'
+import LanguagePage from './containers/LanguagePage'
 
 export default class App extends Component {
   
@@ -20,12 +21,16 @@ export default class App extends Component {
       <div className="App">
         <Router>
           <header>
-
+            
           </header>
           <main>
             <Route 
               exact path="/" 
               render={() => <LanguagesContainer languages={this.state.languages} />} 
+            />
+            <Route 
+              exact path="/:language" 
+              render={(props) => <LanguagePage {...props} languages={this.state.languages} />} 
             />
           </main>
         </Router>
