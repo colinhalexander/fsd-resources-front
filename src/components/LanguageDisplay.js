@@ -1,11 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
+import "./LanguageDisplay.css"
 
-export default class LanguageDisplay extends Component {
 
-  render() {
-    return (
-      <div className="language-display">
-      </div>
-    )
-  }
+export default function LanguageDisplay(props) {
+
+  const { name, image_url } = props
+
+  return (
+    <div className="language-display">
+      <img src={image_url} alt={name} />
+      <h3>{name}</h3>
+    </div>
+  )
 }
