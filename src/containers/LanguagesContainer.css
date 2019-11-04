@@ -3,5 +3,10 @@
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  padding: 50px;
+}
+
+main > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px;
 }

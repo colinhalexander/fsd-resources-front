@@ -10,9 +10,12 @@ export default class LanguagesContainer extends Component {
 
   render() {
     return (
-      <div className="languages-container">
-        {this.displayLanguages()}
-      </div>
+      <>
+        <h2>Select A Language To Get Started</h2>
+        <section className="languages-container">
+          {this.displayLanguages()}
+        </section>
+      </>
     )
   }
 }
