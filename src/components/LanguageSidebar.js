@@ -16,6 +16,7 @@ export default function LanguageSidebar({ languages }) {
       </NavLink>
     )
   })
+  
   return (
     <section className="language-sidebar">
       {languagesList()}

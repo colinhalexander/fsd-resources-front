@@ -1,10 +1,16 @@
 .language-sidebar {
+  position: sticky;
   display: flex;
   flex-flow: column nowrap;
+  width: 160px;
+  border: solid 1px white;
 }
 
 .sidebar-link {
   text-decoration: none;
-  color: black;
-  font-size: 15px;
+  color: white;
+  font-size: 20px;
+  background-color: darkcyan;
+  padding: 7px 5px;
+  border: solid 1px;
 }

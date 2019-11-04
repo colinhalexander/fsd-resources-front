@@ -1,0 +1,4 @@
+.language-page {
+  display: flex;
+  flex-flow: row nowrap;
+}
